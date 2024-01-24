@@ -1,0 +1,8 @@
+numpy==1.26.3
+pillow==10.2.0
+matplotlib==3.8.2
+singleton-decorator
+tensorflow-gpu==2.9.0
+tensorflow_hub==0.15.0
+opencv-python==4.9.0.80
+opencv-contrib-python==4.9.0.80
