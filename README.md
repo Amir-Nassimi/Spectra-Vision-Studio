@@ -238,11 +238,6 @@ make waves together with Super Spectra Vision and our Kernel. 🚀
 For any queries or discussions regarding our kernel, feel free to open an issue in the kernel's repository, and we'll be
 more than happy to engage with you. Together, we're not just changing audio; we're making history!
 
-Certainly! I'll enhance the "Technology Stack" section for your README, providing more context and details about each
-technology used in the Super Spectra Vision:
-
----
-
 ## Technology Stack
 
 Super Spectra Vision is powered by a carefully curated selection of technologies, each contributing its unique strengths
