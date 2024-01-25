@@ -37,9 +37,9 @@ class SuperResolutionApp:
 
 def main():
     parser = argparse.ArgumentParser(description='Image Super-Resolution')
-    parser.add_argument('model_name', type=str, help='Name of the super-resolution model')
-    parser.add_argument('magnification', type=int, help='Magnification factor')
-    parser.add_argument('image_path', type=str, help='Path to the image file')
+    parser.add_argument('--model_name', type=str, help='Name of the super-resolution model')
+    parser.add_argument('--magnification', type=int, help='Magnification factor')
+    parser.add_argument('--image_path', type=str, help='Path to the image file')
 
     args = parser.parse_args()
 

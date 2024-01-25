@@ -1,11 +1,10 @@
 # Image Super Spectra Vision
 
-The Image Super Spectra Vision represents a leap in image enhancement technology, merging the realms of advanced
-super-resolution algorithms with practical, user-friendly applications. At its core, this platform utilizes
-groundbreaking techniques such as the ESRGAN model and our unique MultipleSR model to redefine image clarity and detail.
-Designed for a wide range of applications, from professional photography to intricate fields like medical imaging and
-satellite analysis, the Image Super Spectra Vision offers an unparalleled toolset for revealing hidden details in
-images. This summary is your gateway to exploring our full suite of super-resolution capabilities.
+The Image Super Spectra Vision marks a significant advancement in image enhancement, combining state-of-the-art
+super-resolution techniques with user accessibility. Leveraging the power of ESRGAN and our proprietary MultipleSR
+model, it delivers exceptional image clarity and detail. Ideal for diverse applications from professional photography to
+medical imaging, this platform provides a comprehensive solution for uncovering intricate details in images, offering a
+gateway to our extensive super-resolution capabilities.
 
 ## Table of Contents
 
@@ -72,26 +71,30 @@ Embark on your journey to superior image resolution by following these simple in
 
 ## Usage
 
-Elevate your images to new heights with a simple command:
+Using Super Spectra Vision is straightforward. Follow these steps to generate high quality images:
 
-```bash
-python super_resolution_app.py [model; e.g. EDSR] [available size; e.g. 4] [path/to/your/image.jpg]
-```
+1. **Open Terminal or Command Prompt:** Navigate to the directory where Lingua Luxe Vision is installed.
 
-Choose from an array of models to best suit your image enhancement needs:
+2. **Run the script using Python and provide the necessary arguments:** the model name, magnification factor, and the
+   path to the image. For example:
 
-| Model  | Available Sizes |
-|--------|-----------------|
-| EDSR   | 2, 3, 4         |
-| ESPCN  | 2, 3, 4         |
-| FSRCNN | 2, 3, 4         |
-| LapSRN | 2, 4, 8         |
-| ESRGAN | 4               |
+   ```bash
+   python super_resolution_app.py --model_name --magnification --image_path
+   ```
+    - `--model_name`: Place your chosen model.
+    - `--magnification`: Place 4 your chosen magnification factor.
+    - `--image_path`: Place path/to/your/image.jpg with the actual path to your image.
 
-## Result Examples
+   For example, to generate an image using the detailed model with specific magnification, your command might look like
+   this:
 
-Here are some examples for different methods and their outputs. Each image has a related caption that explains that
-image.
+   ```bash
+   python super_resolution_app.py EDSR 4 path/to/your/image.jpg
+   ```
+
+3. **Understanding the Script's Output:**
+
+The script will validate the model and magnification factor based on the provided compatibility table:
 
 <style>
   .custom-row {
@@ -100,6 +103,49 @@ image.
     font-family: 'Times New Roman', Times, serif;
   }
 </style>
+
+<table align="center">
+   <tr class="custom-row">
+      <td colspan="1" align="center">
+         <h4>Model</h4>
+      </td>
+      <td colspan="1" align="center">
+         <h4>Available Size</h4>
+      </td>
+   </tr>
+   <tr>
+      <td colspan="1" align="center">EDSR</td>
+      <td colspan="1" align="center">2, 3, 4</td>
+   </tr>
+   <tr>
+      <td colspan="1" align="center">ESPCN</td>
+      <td colspan="1" align="center">2, 3, 4</td>
+   </tr>
+   <tr>
+      <td colspan="1" align="center">FSRCNN</td>
+      <td colspan="1" align="center">2, 3, 4</td>
+   </tr>
+   <tr>
+      <td colspan="1" align="center">LapSRN</td>
+      <td colspan="1" align="center">2, 4, 8</td>
+   </tr>
+   <tr>
+      <td colspan="1" align="center">ESRGAN</td>
+      <td colspan="1" align="center">4</td>
+   </tr>
+</table>
+
+
+---
+If the combination is valid, it will proceed to enhance the resolution of the provided image using the ImageSR class.
+The enhanced image will be displayed on your screen if the process is successful. If you enter an invalid model or
+magnification factor (one that's not compatible according to your
+table), the script will raise an error and terminate.
+
+## Result Examples
+
+Here are some examples for different methods and their outputs. Each image has a related caption that explains that
+image.
 
 <table>
    <tr>
@@ -192,18 +238,44 @@ make waves together with Super Spectra Vision and our Kernel. 🚀
 For any queries or discussions regarding our kernel, feel free to open an issue in the kernel's repository, and we'll be
 more than happy to engage with you. Together, we're not just changing audio; we're making history!
 
+Certainly! I'll enhance the "Technology Stack" section for your README, providing more context and details about each
+technology used in the Super Spectra Vision:
+
+---
+
 ## Technology Stack
 
-Super Spectra Vision is built with the following robust technologies:
+Super Spectra Vision is powered by a carefully curated selection of technologies, each contributing its unique strengths
+to our advanced image processing and analysis capabilities:
 
-- numpy==1.26.3
-- pillow==10.2.0
-- matplotlib==3.8.2
-- singleton-decorator
-- tensorflow-gpu==2.9.0
-- tensorflow_hub==0.15.0
-- opencv-python==4.9.0.80
-- opencv-contrib-python==4.9.0.80
+- **numpy (1.26.3)**: As the fundamental package for scientific computing in Python, NumPy offers powerful numerical
+  array objects and a wide range of mathematical functions to efficiently handle large, multi-dimensional arrays and
+  matrices, which are central to image processing tasks.
+
+- **pillow (10.2.0)**: A modern, Python Imaging Library (PIL) fork, Pillow provides extensive support for opening,
+  manipulating, and saving many different image file formats. It's pivotal for image transformations and operations
+  within our application.
+
+- **matplotlib (3.8.2)**: An essential library for creating static, interactive, and animated visualizations in Python.
+  Matplotlib is used in Super Spectra Vision for plotting graphs and visual data representations, crucial for analysis
+  and debugging.
+
+- **singleton-decorator**: This Python package is utilized to implement the singleton design pattern, ensuring that a
+  class has only one instance and providing a global point of access to that instance. This is particularly useful for
+  managing shared resources and configurations.
+
+- **tensorflow-gpu (2.9.0)**: TensorFlow with GPU support enables our system to leverage the power of graphics
+  processing units (GPUs) for deep learning tasks. This accelerates the training and execution of neural networks,
+  making our image processing tasks faster and more efficient.
+
+- **tensorflow_hub (0.15.0)**: TensorFlow Hub is a library for the publication, discovery, and consumption of reusable
+  parts of machine learning models. In our application, it facilitates the easy integration and deployment of
+  pre-trained TensorFlow models, enhancing our model's capabilities.
+
+- **opencv-python (4.9.0.80)** and **opencv-contrib-python (4.9.0.80)**: OpenCV (Open Source Computer Vision Library) is
+  an open-source computer vision and machine learning software library. These packages are essential for real-time image
+  processing and computer vision tasks, providing a wide array of functionalities from basic image processing to complex
+  algorithms.
 
 ## License
 
