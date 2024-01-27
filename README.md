@@ -1,6 +1,8 @@
-# Image Super Spectra Vision
+# Image Spectra Vision Studio
 
-The Image Super Spectra Vision marks a significant advancement in image enhancement, combining state-of-the-art
+![Header](./Assets/Header.jpg)
+
+The Image Spectra Vision Studio marks a significant advancement in image enhancement, combining state-of-the-art
 super-resolution techniques with user accessibility. Leveraging the power of ESRGAN and our proprietary MultipleSR
 model, it delivers exceptional image clarity and detail. Ideal for diverse applications from professional photography to
 medical imaging, this platform provides a comprehensive solution for uncovering intricate details in images, offering a
@@ -22,7 +24,7 @@ gateway to our extensive super-resolution capabilities.
 
 ## Introduction
 
-Welcome to the Image Super Spectra Vision, a state-of-the-art platform engineered to transform image resolution through
+Welcome to the Image Spectra Vision Studio, a state-of-the-art platform engineered to transform image resolution through
 innovative super-resolution technologies. This system is not just a tool; it's a gateway to unlocking unseen details in
 images ranging from everyday photography to specialized fields like medical imaging and geospatial analysis. Our
 sophisticated approach, including the renowned ESRGAN model and our proprietary MultipleSR model, ensures unparalleled
@@ -71,7 +73,7 @@ Embark on your journey to superior image resolution by following these simple in
 
 ## Usage
 
-Using Super Spectra Vision is straightforward. Follow these steps to generate high quality images:
+Using Spectra Vision Studio is straightforward. Follow these steps to generate high quality images:
 
 1. **Open Terminal or Command Prompt:** Navigate to the directory where Lingua Luxe Vision is installed.
 
@@ -219,7 +221,7 @@ image.
 # Explore Our Kernel 🚀
 
 We are thrilled to unveil our cutting-edge kernel, an embodiment of innovation that integrates the audio manipulation
-capabilities of Super Spectra Vision! It's not just a repository; it's a revolution in audio processing, built with our
+capabilities of Spectra Vision Studio! It's not just a repository; it's a revolution in audio processing, built with our
 audio projects at its heart.
 
 ## Catch the Wave of Audio Innovation
@@ -229,7 +231,7 @@ updates, and let your ears be the judge. If you're as passionate about audio as 
 there!
 
 Remember, the future of audio is not just heard; it's shared and shaped by enthusiasts and professionals alike. Let's
-make waves together with Super Spectra Vision and our Kernel. 🚀
+make waves together with Spectra Vision Studio and our Kernel. 🚀
 
 🔗 [Kernel Repository](https://github.com/Meta-Intelligence-Services)
 
@@ -240,7 +242,7 @@ more than happy to engage with you. Together, we're not just changing audio; we'
 
 ## Technology Stack
 
-Super Spectra Vision is powered by a carefully curated selection of technologies, each contributing its unique strengths
+Spectra Vision Studio is powered by a carefully curated selection of technologies, each contributing its unique strengths
 to our advanced image processing and analysis capabilities:
 
 - **numpy (1.26.3)**: As the fundamental package for scientific computing in Python, NumPy offers powerful numerical
@@ -252,7 +254,7 @@ to our advanced image processing and analysis capabilities:
   within our application.
 
 - **matplotlib (3.8.2)**: An essential library for creating static, interactive, and animated visualizations in Python.
-  Matplotlib is used in Super Spectra Vision for plotting graphs and visual data representations, crucial for analysis
+  Matplotlib is used in Spectra Vision Studio for plotting graphs and visual data representations, crucial for analysis
   and debugging.
 
 - **singleton-decorator**: This Python package is utilized to implement the singleton design pattern, ensuring that a
@@ -274,11 +276,11 @@ to our advanced image processing and analysis capabilities:
 
 ## License
 
-Super Spectra Vision is open-sourced under the MIT License. See [LICENSE](LICENSE) for more details.
+Spectra Vision Studio is open-sourced under the MIT License. See [LICENSE](LICENSE) for more details.
 
 ## Contributions
 
-While we deeply value community input and interest in Super Spectra Vision, the project is currently in a phase where
+While we deeply value community input and interest in Spectra Vision Studio, the project is currently in a phase where
 we're mapping out our next steps and are not accepting contributions just yet. We are incredibly grateful for your
 support and understanding. Please stay tuned for future updates when we'll be ready to welcome contributions with open
 arms.
@@ -286,11 +288,10 @@ arms.
 ## Credits and Acknowledgements
 
 We would like to extend our heartfelt thanks to Mr.Poorya Omeedi for his guidance and wisdom throughout the
-development of Super Spectra Vision. His insights have been a beacon of inspiration for this project.
+development of Spectra Vision Studio. His insights have been a beacon of inspiration for this project.
 
 ## Contact Information
 
 Although we're not open to contributions at the moment, your feedback and support are always welcome. Please feel free
 to star the project or share your thoughts through the Issues tab on GitHub, and we promise to consider them
-carefully.please [open an issue](https://github.com/Amir-Nassimi/Super-Spectra-Vision/issues) in the Super Spectra
-Vision repository, and we will assist you.
+carefully.please [open an issue](https://github.com/Amir-Nassimi/Spectra-Vision-Studio/issues) in the Spectra Vision Studio repository, and we will assist you.
