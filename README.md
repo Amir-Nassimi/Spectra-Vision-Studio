@@ -1,4 +1,4 @@
-# Image Spectra Vision Studio
+# Spectra Vision Studio
 
 ![Header](./Assets/Header.jpg)
 
