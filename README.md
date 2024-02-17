@@ -61,9 +61,17 @@ Embark on your journey to superior image resolution by following these simple in
 
 2. **Model Acquisition:**
     - Access our curated collection of
-      models [here](https://drive.google.com/drive/folders/1xqpAl0RXVSifARC7flcH_TUfphMj1j1w?usp=sharing) using the
+      models [here](https://drive.google.com/drive/folders/1eL58aGA6m_4ywy5XBDBkRYq2tSmK3iWQ?usp=sharing) using the
       passphrase: `Super_Spectra_Vision`.
     - Unearth the models and station them in your newly created 'Models' directory.
+
+   - To utilize the `GFPGAN`, please follow these steps:
+        1. download the model [here](https://drive.google.com/drive/folders/1j9oDKuJWs4YDjz7txcLp-Dio2ETV7N0e?usp=sharing) and extract the contents inside the ./Modules/GFPGAN using the passphrase: `Super_Spectra_Vision`.
+
+        2. run the following command:
+        ```bash
+     python setup.py develop
+        ```
 
 3. **Dependency Installation:**
     - Install the necessary dependencies to empower your system with the command:
@@ -182,7 +190,11 @@ image.
       <td align="center"><img src="./Assets/nothing.png" alt="Image 5" />LapSRN<br/></td>
       <td align="center"><img src="./Assets/nothing.png" alt="Image 6" />ESRGAN<br/></td>   
 </tr>
-
+   <tr>
+      <td colspan="5" align="center">
+         <img src="./Assets/1.png" alt="Main Image" /><br />
+      </td>
+   </tr>
    <tr class="custom-row">
       <td colspan="5" align="center">
          <h4>Magnifying by 4 with the size 256 by 256</h4>
@@ -198,8 +210,8 @@ image.
 
    <tr>
       <td colspan="5" align="center">
-         <h4 class="custom-row">Magnifying by 4 with the size 256 by 256</h4>
-         <img src="./Assets/5.png" alt="Main Image" /><br />
+         <h4 class="custom-row">GFPGAN</h4>
+         <img src="./Assets/7-1.png" alt="Main Image" /><br />
       </td>
    </tr>
 </table>

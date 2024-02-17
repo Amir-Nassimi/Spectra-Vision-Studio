@@ -1,6 +1,7 @@
 import os
 from ESPRGAN.espr_gan import ESRGAN_4X
 from singleton_decorator import singleton
+from GFPGAN.inference_gfpgan import GFPGAN
 from Multiple.multiple_sr import MultipleSR
 
 
@@ -14,6 +15,9 @@ class ImageSR:
 
         elif my_model + '.pb' in os.listdir('../Models/SRmodels'):
             self.method = MultipleSR('../Models/SRmodels/' + my_model + '.pb')
+        
+        elif model_name == 'GFPGAN':
+            self.method = GFPGAN()
 
         else:
             raise NotImplementedError('The mentioned model with this particular magnifying has not been implemented')
