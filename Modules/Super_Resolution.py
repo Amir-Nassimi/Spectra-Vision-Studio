@@ -1,6 +1,7 @@
 import os
 from ESPRGAN.espr_gan import ESRGAN_4X
 from singleton_decorator import singleton
+from Diffusion.DiffSR import DiffSuperRes
 from GFPGAN.inference_gfpgan import GFPGAN
 from Multiple.multiple_sr import MultipleSR
 
@@ -19,9 +20,15 @@ class ImageSR:
         elif model_name == 'GFPGAN':
             self.method = GFPGAN()
 
+        elif model_name == 'StableDiffusion':
+            self.method = DiffSuperRes()
+
         else:
             raise NotImplementedError('The mentioned model with this particular magnifying has not been implemented')
 
-    def resolution_enhancement(self, image):
-        return self.method.super_res(image)
+    def resolution_enhancement(self, image, prompt='High quality image with details'):
+        if self.model_name == 'StableDiffusion':
+            return self.method.super_res(image, prompt)
+        else:
+            return self.method.super_res(image)
     

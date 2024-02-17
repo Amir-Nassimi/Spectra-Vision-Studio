@@ -158,12 +158,16 @@ Here are some examples for different methods and their outputs. Each image has a
 image.
 
 <table>
-   <tr>
+   <tr class="custom-row">
       <td colspan="5" align="center">
          <h4 class="custom-row">Input Image - 68 by 68 </h4>
-         <img src="./Assets/1.png" alt="Main Image" /><br />
       </td>
    </tr>
+    <tr>
+        <td colspan="5" align="center">
+            <img src="./Assets/1.png" alt="Main Image" /><br />
+        </td>
+    </tr>
 
    <tr class="custom-row" class="custom-row">
       <td colspan="5" align="center">
@@ -190,11 +194,6 @@ image.
       <td align="center"><img src="./Assets/nothing.png" alt="Image 5" />LapSRN<br/></td>
       <td align="center"><img src="./Assets/nothing.png" alt="Image 6" />ESRGAN<br/></td>   
 </tr>
-   <tr>
-      <td colspan="5" align="center">
-         <img src="./Assets/1.png" alt="Main Image" /><br />
-      </td>
-   </tr>
    <tr class="custom-row">
       <td colspan="5" align="center">
          <h4>Magnifying by 4 with the size 256 by 256</h4>
@@ -208,11 +207,20 @@ image.
       <td align="center"><img src="./Assets/4-5.png" alt="Image 6" />ESRGAN<br/></td>   
    </tr>
 
-   <tr>
+   <tr class="custom-row">
       <td colspan="5" align="center">
          <h4 class="custom-row">GFPGAN</h4>
-         <img src="./Assets/7-1.png" alt="Main Image" /><br />
       </td>
+    <tr>
+        <td colspan="5" align="center"><img src="./Assets/7-1.png" alt="Main Image" /><br /></td>
+    </tr>
+
+   <tr class="custom-row">
+    <td colspan="5" align="center"><h4>Diffusion Model</h4></td>
+    </tr>
+    <tr>
+        <td align="center" colspan="2"><img src="./Assets/8-1.png" alt="Main Image" /><br /></td>
+        <td colspan="3" align="center"><img src="./Assets/8-2.png" alt="Main Image" /><br /></td>
    </tr>
 </table>
 
