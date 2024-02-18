@@ -13,12 +13,16 @@ class SuperResolutionApp:
             "ESPCN": [2, 3, 4],
             "FSRCNN": [2, 3, 4],
             "LapSRN": [2, 4, 8],
-            "ESRGAN": [4]
+            "ESRGAN": [4],
+            "GFPGAN": [2],
+            "StableDiffusion":[2]
         }
 
     def validate_model_and_magnification(self):
         if self.model_name in self.model_magnification_map:
-            if self.magnification in self.model_magnification_map[self.model_name]:
+            if self.model_name == 'GFPGAN' or self.model_name == 'StableDiffusion':
+                return True
+            elif self.magnification in self.model_magnification_map[self.model_name]:
                 return True
         return False
 
@@ -27,7 +31,10 @@ class SuperResolutionApp:
             raise ValueError(f"Magnification factor {self.magnification} is not valid for model {self.model_name}")
 
         # Initialize the ImageSR class
-        my_class = ImageSR(self.model_name, self.magnification)
+        if self.model_name == 'GFPGAN' or self.model_name == 'StableDiffusion':
+            my_class = ImageSR(self.model_name)
+        else:
+            my_class = ImageSR(self.model_name, self.magnification)
 
         # Perform resolution enhancement
         img = Image.open(self.image_path)

@@ -8,7 +8,7 @@ from GFPGAN.GFPGAN.inference_gfpgan import GFPGAN
 
 @singleton
 class ImageSR:
-    def __init__(self, model_name, magnifier):
+    def __init__(self, model_name, magnifier=2):
         my_model = model_name + '_x' + str(magnifier)
 
         if my_model == 'ESRGAN_x4':
