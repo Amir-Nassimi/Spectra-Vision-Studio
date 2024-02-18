@@ -2,8 +2,8 @@ import os
 from ESPRGAN.espr_gan import ESRGAN_4X
 from singleton_decorator import singleton
 from Diffusion.DiffSR import DiffSuperRes
-from GFPGAN.inference_gfpgan import GFPGAN
 from Multiple.multiple_sr import MultipleSR
+from GFPGAN.GFPGAN.inference_gfpgan import GFPGAN
 
 
 @singleton
