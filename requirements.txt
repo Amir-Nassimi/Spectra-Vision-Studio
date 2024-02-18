@@ -1,5 +1,17 @@
+tqdm
+lmdb
+yapf
+scipy
+pyyaml
+tb-nightly
+torchvision
+torch==2.1.2
 numpy==1.26.3
+basicsr>=1.4.2
 pillow==10.2.0
+facexlib>=0.2.5
+realesrgan==0.3.0
+diffusers==0.25.1
 matplotlib==3.8.2
 singleton-decorator
 tensorflow-gpu==2.9.0
